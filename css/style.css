@@ -1,0 +1,97 @@
+* { padding: 0; margin: 0; box-sizing: border-box; }
+
+a { text-decoration: none; display: inline-block; color: inherit; }
+
+ul { list-style: none; }
+
+button { color: inherit; border: 0; background: none; cursor: pointer; font-size: inherit; font-family: inherit; }
+
+/*
+@mixin clipPath($path) {
+    clip-path: $path;
+    -webkit-clip-path: $path;
+}
+
+@mixin fitContent {
+    width: fit-content;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+}
+*/
+body { font-family: 'Mitr', sans-serif; color: #FFFFFF; letter-spacing: 0.01rem; }
+
+.btn-geral { background: linear-gradient(-90deg, #96EBE6 0%, #64B6B1 100%); background: -moz-linear-gradient(-90deg, #96EBE6 0%, #64B6B1 100%); background: -o-linear-gradient(-90deg, #96EBE6 0%, #64B6B1 100%); background: -webkit-linear-gradient(-90deg, #96EBE6 0%, #64B6B1 100%); -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; box-shadow: 4px 4px 20px #0e4a6b80; -moz-box-shadow: 4px 4px 20px #0e4a6b80; -webkit-box-shadow: 4px 4px 20px #0e4a6b80; padding: 8px 25px; color: #0F243E; }
+
+h2 { font-weight: 600; font-size: 3rem; text-shadow: 4px 4px 4px #024C75; }
+
+h1, h2, h3 { line-height: 1; }
+
+.container { max-width: 880px; width: 100%; margin: 0 auto; padding: 0 15px; }
+
+.container-header { max-width: 1200px; width: 100%; margin: 0 auto; padding: 0 15px; }
+
+.sup-header { background: #0F6393; box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4); -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4); -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4); }
+
+.sup-header .container-header { display: flex; align-items: center; }
+
+.doacao-link { padding: 5px 10px; background: #96EBE6; color: #0F243E; margin-left: auto; }
+
+.entrar-link { padding: 5px 15px; }
+
+.horarios-abertos { position: relative; }
+
+.horarios-abertos .fechado-aberto { padding: 5px 10px; }
+
+.horarios-abertos ul { position: absolute; background: #0F6393; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.22); -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.22); -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.22); width: max-content; width: -webkit-max-content; width: -moz-max-content; padding: 15px; display: none; }
+
+.horarios-abertos ul p { font-weight: 600; color: #96EBE6; }
+
+.horarios-abertos ul .horario { display: block; }
+
+.horarios-abertos ul li + li { margin-top: 10px; padding-top: 10px; border-top: 2px solid #033462; }
+
+.inf-header .container-header { display: flex; align-items: center; justify-content: space-between; height: 60px; border: 1px solid red; }
+
+.inf-header ul { display: flex; align-items: center; }
+
+.inf-header a { padding: 5px 15px; }
+
+.inf-header .logo { padding: 10px; font-weight: 600; font-size: 1.25rem; }
+
+.principal { background-image: url("../../img/principal.jpg"); background-size: cover; background-repeat: no-repeat; min-height: 500px; margin-top: -60px; color: #FFFFFF; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+
+.principal h1 { font-size: 3.55rem; text-shadow: 4px 4px 20px rgba(0, 0, 0, 0.5); line-height: 1; text-align: center; }
+
+.principal h1 span { color: #96EBE6; }
+
+.principal p { margin: 10px; }
+
+.eventos { background: linear-gradient(-90deg, #0F6393 0%, #024C75 100%); background: -moz-linear-gradient(-90deg, #0F6393 0%, #024C75 100%); background: -o-linear-gradient(-90deg, #0F6393 0%, #024C75 100%); background: -webkit-linear-gradient(-90deg, #0F6393 0%, #024C75 100%); display: flex; align-items: center; padding: 4rem; }
+
+.eventos .container { display: flex; align-items: center; justify-content: space-between; }
+
+.header-eventos h2 { margin-bottom: 1.5rem; }
+
+.lista-eventos { display: flex; flex-direction: column; }
+
+.lista-eventos article { display: grid; grid-template-columns: auto auto; grid-gap: 10px; }
+
+.lista-eventos a + a { margin-top: 40px; }
+
+.lista-eventos a { padding: 15px; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; -webkit-transition: 0.3s ease-out; -moz-transition: 0.3s ease-out; -o-transition: 0.3s ease-out; transition: 0.3s ease-out; }
+
+.lista-eventos a:hover { background: #96EBE60F; }
+
+.lista-eventos p { max-width: 230px; grid-column: 2; }
+
+.lista-eventos time { grid-column: 1; grid-row: 1 / 3; color: #96EBE6; text-align: right; margin-right: 10px; font-weight: 600; }
+
+.lista-eventos time span { font-size: 3rem; line-height: 1; display: block; }
+
+.lista-eventos time span::before { content: ''; background: #96EBE6; width: 100%; height: 3px; display: block; margin: 7px 0; }
+
+.animais { background: linear-gradient(-90deg, #033462 0%, #001A41 100%); background: -moz-linear-gradient(-90deg, #033462 0%, #001A41 100%); background: -o-linear-gradient(-90deg, #033462 0%, #001A41 100%); background: -webkit-linear-gradient(-90deg, #033462 0%, #001A41 100%); padding: 4rem; }
+
+.animais .container { display: flex; align-items: center; justify-content: space-between; }
+
+.header-animais { order: 2; }

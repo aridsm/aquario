@@ -1,0 +1,55 @@
+$cor-1: #96EBE6;
+$cor-2: #0F6393;
+$cor-bg-1: #024C75;
+$cor-bg-2: #001A41;
+$cor-3: #033462;
+$cor-4:#FFFFFF;
+$cor-5: #0F243E;
+$cor-fundos: #96EBE60F;
+;
+
+
+@mixin shadow($shadow...) {
+    box-shadow: $shadow;
+    -moz-box-shadow: $shadow;
+    -webkit-box-shadow: $shadow;
+}
+
+@mixin gradient($gradient) {
+    background: linear-gradient($gradient);
+    background: -moz-linear-gradient($gradient);
+    background: -o-linear-gradient($gradient);
+    background: -webkit-linear-gradient($gradient)
+}
+
+@mixin borderRadius($radius) {
+    -moz-border-radius: $radius;
+    -webkit-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin maxContent {
+    width: max-content;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+}
+
+@mixin transition {
+    -webkit-transition: 0.3s ease-out;
+    -moz-transition: 0.3s ease-out;
+    -o-transition: 0.3s ease-out;
+    transition: 0.3s ease-out;
+}
+
+/*
+@mixin clipPath($path) {
+    clip-path: $path;
+    -webkit-clip-path: $path;
+}
+
+@mixin fitContent {
+    width: fit-content;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+}
+*/

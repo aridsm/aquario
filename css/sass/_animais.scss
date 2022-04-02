@@ -1,0 +1,13 @@
+.animais {
+    @include gradient((-90deg, $cor-3 0%, $cor-bg-2 100%));
+    padding: 4rem;
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.header-animais {
+    order:2
+}

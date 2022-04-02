@@ -1,0 +1,30 @@
+body {
+    font-family: 'Mitr', sans-serif;
+    color: $cor-4;
+    letter-spacing: 0.01rem
+}
+
+.btn-geral {
+    @include gradient((-90deg, $cor-1 0%, #64B6B1 100%));
+    @include borderRadius(30px);
+    @include shadow(4px 4px 20px #0e4a6b80);
+    padding: 8px 25px;
+    color: $cor-5;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 3rem;
+    text-shadow: 4px 4px 4px $cor-bg-1;
+}
+
+h1,h2,h3 {
+    line-height: 1;
+}
+
+.container {
+    max-width: 880px;
+    width: 100%;
+    margin: 0 auto;
+    padding:0 15px;
+}
