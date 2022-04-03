@@ -41,9 +41,16 @@ $cor-borda: #96ebe626;
     transition: 0.2s ease-out;
 }
 
-@mixin clipPath($path) {
-    clip-path: $path;
-    -webkit-clip-path: $path;
+@mixin brilho {
+    filter: blur(230px);
+    -webkit-filter: blur(230px);
+    background: $cor-1;
+    content: '';
+    display: block;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    z-index: -1;
 }
 
 @mixin fitContent {

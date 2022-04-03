@@ -62,6 +62,7 @@
 
 .inf-header {
     position: sticky;
+    position: -webkit-sticky;
     top:0;
     width: 100%;
     border-bottom: 1px solid $cor-borda;

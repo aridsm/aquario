@@ -10,13 +10,23 @@
     }
     h2 {
         max-width: 400px;
-
+        position: relative;
+        &::after {
+            @include brilho;
+            bottom: -50%;
+            left: 50%
+        }
     }
 }
 
 .lista-eventos {
     display: flex;
     flex-direction: column;
+    &::after {
+        @include brilho;
+        bottom: -50%;
+        right: 0
+    }
     article {
         display: grid;
         grid-template-columns: auto auto;
@@ -32,7 +42,9 @@
         background: $cor-fundos;
         border:1px solid transparent;
         &:hover {
-            border:1px solid $cor-borda
+            border:1px solid $cor-borda;
+            @include shadow(0 0 0 5px $cor-fundos)
+
         }
     }
     p {

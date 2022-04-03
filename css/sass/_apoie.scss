@@ -10,7 +10,7 @@
     ul {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 2.5rem;
+        grid-gap: 7%;
         a {
             padding: 2.5rem;
             position: relative;
@@ -20,7 +20,8 @@
             @include transition;
             @include borderRadius(3px);
             &:hover {
-                border:1px solid $cor-borda
+                border:1px solid $cor-borda;
+                @include shadow(0 0 0 5px $cor-fundos)
             }
             i {
                 display: block;
