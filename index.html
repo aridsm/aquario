@@ -15,7 +15,7 @@
     <div class="sup-header">
         <div class="container-header">
             <div class="horarios-abertos">
-                <button class="fechado-aberto">Fechado agora</button>
+                <button class="fechado-aberto">Fechado agora <i class="bi bi-caret-left"></i></button>
                 <ul>
                     <li>
                         <p>Segunda a sexta</p>
@@ -28,7 +28,7 @@
                 </ul>  
             </div>
             <a href="" class="doacao-link">Faça uma doação</a>
-            <a href="" class="entrar-link">Entrar</a>
+            <a href="" class="entrar-link">Entrar <i class="bi bi-person-circle"></i></a>
         </div>
     </div>
     <header class="inf-header">
@@ -49,9 +49,22 @@
     </header>
     <main>
         <section class="principal">
-            <h1>Lorem <span>ipsum</span> dolor <br> sit amet</h1>
-            <p>Id lobortis nulla vestibulum.</p>
-            <a href="" class="btn-geral">Compre o ingresso</a>
+            <div class="container-header">
+                <div class="textos-principal">
+                    <p class="subtitulo">Id lobortis nulla vestibulum</p>
+                    <h1>Lorem <span>ipsum</span> dolor sit amet</h1>
+                    <p>Ut euismod lorem ac ultricies posuere. Nulla sed euismod felis. </p>
+                    <a href="" class="btn-geral">Compre o ingresso</a>  
+                </div>
+                <div class="imgs-principal">
+                    <div class="circulo-1">
+                        <img src="./img/imgprincipal1.png" alt="">
+                    </div>
+                </div> 
+            </div>
+            <ul class="redes-sociais">
+                <li><a href=""></a></li>
+            </ul>
         </section>
         <section class="eventos">
             <div class="container">
@@ -80,14 +93,14 @@
         <section class="animais">
             <div class="container">
                 <header class="header-animais">
-                    <h2>Conheça os nossos animais</h2>
+                    <h2>Nossos animais</h2>
                     <a href="#" class="btn-geral">Todos os animais</a>
                 </header>
                 <div class="slide-animais">
                     <article>
-                        <img src="./img/animais1.png" alt="peixe palhaço de lado">
+                        <img src="./img/animais3.png" alt="peixe palhaço de lado">
                         <h3 aria-label="nome comum">Peixe-palhaço-comum</h3>
-                        <i aria-label="nome científico">Amphiprion ocellaris</i>
+                        <i aria-label="nome científico" class="nome-cientifico">Amphiprion ocellaris</i>
                         <p>Phasellus venenatis lectus a eros eleifend, sed feugiat magna rutrum. Integer dictum a ex id mollis. Nulla vestibulum, enim vitae ultrices luctus</p>
                     </article>
                     <div class="btns-slide">
@@ -97,6 +110,111 @@
                 </div>
             </div>
         </section>
+        <section class="apoie">
+            <div class="container">
+                <h2>Apoie o aquário</h2>
+                <p>Você pode nos ajudar</p>
+                <ul>
+                    <li><a href=""><i class="bi bi-piggy-bank"></i> Fazendo uma doação de qualquer valor</a></li>
+                    <li><a href=""><i class="bi bi-box2-heart"></i> Comprando um de nossos produtos</a></li>
+                    <li><a href=""><i class="bi bi-geo-alt"></i> Nos fazendo uma visita</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="perguntas">
+            <div class="container">
+                <header>
+                    <h2>Perguntas frequentes</h2>
+                </header>
+                <ul>
+                    <li>
+                        <button>Donec ullamcorper justo in diam? <i class="bi bi-caret-left"></i></button>
+                        <p>Etiam convallis, libero et condimentum scelerisque, mi tortor ultricies nisi, a maximus justo nisi a eros.</p>
+                    </li>
+                    <li>
+                        <button>Nam pretium, ex quis dignissim faucibus? <i class="bi bi-caret-left"></i></button>
+                        <p>Nulla iaculis elit sapien, ut malesuada tortor lobortis eget. Vestibulum consequat, nibh ac pellentesque placerat.</p>
+                    </li>
+                    <li>
+                        <button> Vestibulum at lacus eget metus? <i class="bi bi-caret-left"></i></button>
+                        <p>Donec efficitur consequat lectus, in faucibus dui. Etiam convallis, libero et condimentum scelerisque, mi tortor ultricies nisi, a maximus.</p>
+                    </li>
+                    <li>
+                        <button>Aenean ut elit ligula? <i class="bi bi-caret-left"></i></button>
+                        <p>Pellentesque ullamcorper ut risus in tempus. Nullam porta cursus nisl quis suscipit. Sed sed condimentum enim, in suscipit urna.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="galeria">
+            <div class="galeria-container">
+                <img src="./img/galeria1.jpg" alt="cardume de pequenos peixes laranjas e listrados em um aquário">
+                <img src="./img/galeria2.jpg" alt="cavalos marinhos">
+                <img src="./img/galeria4.jpg" alt="peixe azul cintilante com listras vermelhas">
+                <img src="./img/galeria5.jpg" alt="peixe branco com listras vermelhas em um aquário e peixes no fundo">
+                <img src="./img/galeria6.jpg" alt="tartaruga em um aquário">
+            </div>
+        </section>
+        <section class="inscrevase">
+            <div class="container">
+                <header>
+                    <h2>Inscreva-se para receber promoções no email</h2>
+                </header>
+                <form>
+                    <input type="email" name="email" id="email" placeholder="seuemail@email.com">
+                    <button type="submit" class="btn-geral">Inscreva-se</button>
+                </form>
+            </div>
+        </section>
     </main>
+    <footer>
+        <div class="container">
+            <div class="infos-gerais">
+                <nav>
+                    <h3>Menu</h3>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Visitas</a></li>
+                        <li><a href="">Exibições</a></li>
+                        <li><a href="">Eventos</a></li>
+                        <li><a href="">Galeria</a></li>
+                        <li><a href="">Contato</a></li>
+                        <li><a href="">Sua conta</a></li>
+                        <li><a href="">Faça uma doação</a></li>
+                    </ul>
+                </nav>
+
+                <div class="endereco">
+                    <h3>Endereço</h3>
+                    <span>Rua tal 200</span>
+                    <span>12345-678</span>
+                    <span>Cidade - ET</span>
+                    <span>Brasil</span>
+                </div>
+
+                <div class="contato">
+                    <h3>Contato</h3>
+                    <span>contato@email.com</span>
+                    <span>+55 (00) 1234-5678</span>
+                    <ul class="redes-sociais">
+                        <li><a href=""><i class="bi bi-instagram"></i></a></li>
+                        <li><a href=""><i class="bi bi-twitter"></i></a></li>
+                        <li><a href=""><i class="bi bi-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="btn-e-form">
+                <a href="" class="btn-geral">Compre o ingresso</a>
+                <form>
+                    <input type="email" name="email-footer" id="email-footer" placeholder="seuemail@email.com">
+                    <button type="submit" class="btn-geral">Inscreva-se</button>
+                </form>
+            </div>
+            <div class="termos-by">
+                <a href="">Termos e condições</a>
+                <a href="">Projeto feito por Ariane Morelato <i class="bi bi-github"></i></a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

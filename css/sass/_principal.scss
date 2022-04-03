@@ -1,24 +1,67 @@
 .principal {
-    background-image: url('../../img/principal.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 500px;
-    margin-top: -60px;
+    @include gradient((-90deg, $cor-3 0%, $cor-bg-2 100%));
+    margin-top: -4rem;
     color: $cor-4;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
+    .container-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+        padding: 11rem 15px 7rem 15px;
+    }
+    .subtitulo {
+        text-transform: uppercase;
+        color: $cor-1;
+    }
     h1 {
         font-size: 3.55rem;
-        text-shadow: 4px 4px 20px rgba(0, 0, 0, 0.5);
-        line-height: 1;
-        text-align: center;
+        text-shadow: 4px 4px 10px #0F243E;
+        line-height: 1.2;
+        max-width: 500px;
         span {
             color: $cor-1;
         }
     }
-    p {
-        margin: 10px ;
+    h1 + p {
+        max-width: 400px;
+        margin-top: 1rem;
+    }
+    .btn-geral {
+        margin-top: 2rem;
+    }
+    .imgs-principal {
+        flex:1;
+        display:flex;
+        justify-content: center;
+        .circulo-1 {
+            border-radius: 50%;
+            background: $cor-3;
+            outline: 1px solid $cor-1;
+            outline-offset: 1rem;
+            width: 17rem;
+            height: 17rem;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &::before {
+                content: '';
+                width: 22rem;
+                height: 22rem;
+                border: 1px solid $cor-borda;
+                border-radius: 50%;
+                display: block;
+                position: absolute;
+            }
+            img {
+                display: block;
+                position: absolute;
+                width: 470px;
+                bottom: -100px;
+                right: -150px
+            }
+        }
     }
 }

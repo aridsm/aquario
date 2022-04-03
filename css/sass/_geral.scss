@@ -1,6 +1,7 @@
 body {
     font-family: 'Mitr', sans-serif;
     color: $cor-4;
+    font-size: 0.9rem;
     letter-spacing: 0.01rem
 }
 
@@ -12,14 +13,36 @@ body {
     color: $cor-5;
 }
 
+input {
+    padding: 0.5rem;
+    @include borderRadius(3px);
+    border:1px solid $cor-borda;
+    background: $cor-fundos;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    color: inherit;
+    text-align: right;
+}
+
+input::placeholder {
+    color: $cor-1;
+    font-size: 0.825rem;
+}
+
+
 h2 {
-    font-weight: 600;
     font-size: 3rem;
     text-shadow: 4px 4px 4px $cor-bg-1;
 }
 
+h2 + .btn-geral {
+    margin-top: 1.5rem;
+}
+
 h1,h2,h3 {
     line-height: 1;
+
 }
 
 .container {

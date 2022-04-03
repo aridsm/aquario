@@ -1,0 +1,37 @@
+.apoie {
+    @include gradient((-90deg, $cor-2 0%, $cor-bg-1 100%));
+    padding: 5rem;
+    text-align: center;
+
+    h2 + p {
+        margin: 0.5rem 0 3rem 0;
+    }
+
+    ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 2.5rem;
+        a {
+            padding: 2.5rem;
+            position: relative;
+            text-align: center;
+            background: $cor-fundos;
+            border:1px solid transparent;
+            @include transition;
+            @include borderRadius(3px);
+            &:hover {
+                border:1px solid $cor-borda
+            }
+            i {
+                display: block;
+                font-size: 2rem;
+                color: $cor-1;
+                position: absolute;
+                top: -1.2rem;
+                right:0;
+                left:0;
+                margin: 0 auto;
+            }
+        }
+    }
+}

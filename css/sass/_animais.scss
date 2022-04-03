@@ -1,6 +1,6 @@
 .animais {
     @include gradient((-90deg, $cor-3 0%, $cor-bg-2 100%));
-    padding: 4rem;
+    padding: 5rem;
     .container {
         display: flex;
         align-items: center;
@@ -9,5 +9,60 @@
 }
 
 .header-animais {
-    order:2
+    order:2;
+    text-align: right;
+    h2 {
+        text-shadow: 4px 4px 4px $cor-bg-2;
+    }
+}
+
+.slide-animais {
+    display: flex;
+    align-items: flex-end;
+    article {
+        text-align: right;
+        h3 {
+            @include fitContent;
+            margin-left: auto;
+            &::before {
+                content: '';
+                background: $cor-1;
+                width: 30px;
+                height: 3px;
+                position: relative;
+                top: -4px;
+                margin-right: 1rem;
+                display:inline-block
+            }
+        }
+        .nome-cientifico {
+            color: $cor-1;
+            font-size: 0.875rem;
+        }
+        img {
+            height: 200px;
+            display: block;
+            margin-top: -30%;
+            margin-bottom: 1rem;
+            width: 100%;
+        }
+        p {
+            max-width: 270px;
+            margin-left: auto;
+            margin-top: 1.5rem;
+        }
+    }
+    .btns-slide {
+            color: $cor-1;
+            font-size: 3rem;
+            margin-left: 3rem;
+            button {
+                opacity: 0.3;
+                display: block;
+                @include transition;
+                &:hover {
+                    opacity: 1;
+                }
+            }
+    }
 }

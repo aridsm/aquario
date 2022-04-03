@@ -1,12 +1,12 @@
 $cor-1: #96EBE6;
 $cor-2: #0F6393;
 $cor-bg-1: #024C75;
-$cor-bg-2: #001A41;
+$cor-bg-2: #02294e;
 $cor-3: #033462;
 $cor-4:#FFFFFF;
 $cor-5: #0F243E;
 $cor-fundos: #96EBE60F;
-;
+$cor-borda: #96ebe626;
 
 
 @mixin shadow($shadow...) {
@@ -38,10 +38,9 @@ $cor-fundos: #96EBE60F;
     -webkit-transition: 0.3s ease-out;
     -moz-transition: 0.3s ease-out;
     -o-transition: 0.3s ease-out;
-    transition: 0.3s ease-out;
+    transition: 0.2s ease-out;
 }
 
-/*
 @mixin clipPath($path) {
     clip-path: $path;
     -webkit-clip-path: $path;
@@ -52,4 +51,3 @@ $cor-fundos: #96EBE60F;
     width: -webkit-fit-content;
     width: -moz-fit-content;
 }
-*/

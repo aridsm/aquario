@@ -1,0 +1,10 @@
+.galeria {
+    .galeria-container {
+        display: flex;
+        cursor:grab;
+        overflow: hidden;
+        img {
+            max-width: 33.333%;
+        }
+    }
+}
