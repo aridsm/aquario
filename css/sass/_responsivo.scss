@@ -1,0 +1,183 @@
+@media all and (max-width: 1100px) {
+    .principal h1 {
+        font-size: 3rem;
+        max-width: 350px;
+    }
+    .principal .imgs-principal .circulo-1 {
+        width: 13rem;
+        height: 13rem;
+        &::before {
+            content: '';
+            width: 18rem;
+            height: 18rem;
+        }
+        img {
+            display: block;
+            position: absolute;
+            width: 430px;
+            bottom: -120px;
+            right: -120px;
+        }
+    }
+}
+
+@media all and (max-width: 900px) {
+    .inf-header nav {
+        position: absolute;
+        top: 4rem;
+        background: $cor-3;
+        width: 100%;
+        left:0;
+        display: none;
+        ul {
+            flex-direction: column;
+            justify-content: space-evenly;
+            min-height: calc(100vh - 2rem);
+            li {              
+                width: 100%;
+                text-align: center;
+            };
+            a {
+                width: 100%;
+            }
+        }
+    }
+    .btn-menu-mobile {
+        display: block;
+    }
+}
+
+@media all and (max-width: 790px) {
+    .principal .container-header {
+        flex-direction: column;
+        text-align: center;
+        padding: 9rem 45px 5rem 45px;
+        h1 {
+            margin: 0 auto
+        }
+        .imgs-principal {
+            order: -1;
+            margin-bottom: 7rem;
+            .circulo-1 {
+                width: 10rem;
+                height: 10rem;
+                &::before {
+                    content: '';
+                    width: 15rem;
+                    height: 15rem;
+                }
+                img {
+                    width: 350px;
+                    bottom: -110px;
+                    right: -120px;
+                }
+            }
+        }
+    }
+
+    .eventos .container, .animais .container, .perguntas .container, .inscrevase .container {
+        flex-direction: column;
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+    }
+
+    .animais .container {
+        .header-animais {
+            order:-1
+        }
+        .slide-animais {
+            position: relative;
+            article {
+                text-align: center;
+                h3 {
+                    margin: 0 auto;
+                    &::before {
+                        display: none;
+                    }
+                }
+                img {
+                    margin-top: 0;
+                    width: 250px;
+                }
+                p {
+                    margin-right: auto;
+                }
+            }
+            .btns-slide {
+                    position: absolute;
+                    right: -4rem;
+                    bottom: 0;
+            }
+        }
+    }
+
+    .apoie ul {
+        grid-template-columns: 1fr;
+        a{
+            width: 100%;
+        }
+    }
+
+    .perguntas .container {
+        text-align: center;
+        header {
+            order: -1;
+            h2 {
+                text-align: center;
+            }
+        }
+    }
+
+    .inscrevase {
+        form {
+            input {
+               max-width: 100%;
+            }
+            button {
+                margin-right: auto;
+                margin-left: auto;
+            }
+        }
+    }
+
+    footer .infos-gerais {
+        grid-template-columns: 1fr;
+        text-align: center;
+        nav ul {
+            column-count: 1;
+            -moz-column-count: 1;
+            -webkit-column-count: 1;
+            a {
+                padding: 0.5rem;
+            }
+        }
+        .endereco span {
+            padding: 0.5rem;
+        }
+
+        .contato span {
+            padding: 0.5rem;
+        }
+        .contato .redes-sociais {
+            justify-content: center;
+            margin-top: 1.5rem;
+        }
+    }
+
+    footer {
+        .btn-e-form {
+            flex-direction: column;
+            a {
+                margin-bottom: 3rem;
+            }
+        }
+        .termos-by {
+            flex-direction: column;
+            a {
+                margin-top: 0.5rem;
+            }
+        }
+    }
+}

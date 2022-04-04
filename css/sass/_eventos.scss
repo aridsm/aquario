@@ -27,24 +27,30 @@
         bottom: -50%;
         right: 0
     }
-    article {
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-gap: 10px;
+    article{
+        display: flex;
+        div {
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-gap: 0.8rem;
+            padding: 1rem;
+        }
+    }
+    img {
+        width: 130px;
     }
     a + a {
         margin-top: 40px;
     }
     a {
-        padding: 15px;
         @include borderRadius(3px);
         @include transition;
         background: $cor-fundos;
         border:1px solid transparent;
+        overflow: hidden;
         &:hover {
             border:1px solid $cor-borda;
             @include shadow(0 0 0 5px $cor-fundos)
-
         }
     }
     p {

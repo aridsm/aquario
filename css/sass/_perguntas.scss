@@ -1,6 +1,6 @@
 .perguntas {
     @include gradient((-90deg, $cor-3 0%, $cor-bg-2 100%));
-    padding: 5rem;
+    padding: 5rem 0;
     .container {
         display: flex;
         align-items: center;
@@ -23,8 +23,13 @@
         }
         button {
             text-align:left;
+            @include transition;
             i {
                 color: $cor-1;
+            }
+            &:hover {
+                color: $cor-1;
+                text-decoration: underline;
             }
         }
         p {

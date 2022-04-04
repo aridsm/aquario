@@ -13,7 +13,12 @@ footer {
             -moz-column-count: 2;
             -webkit-column-count: 2;
             a {
-                padding: 0.2rem
+                padding: 0.2rem;
+                @include transition;
+                &:hover {
+                    color: $cor-1;
+                    text-decoration: underline;
+                }
             }
         }
         .endereco span {
@@ -52,9 +57,12 @@ footer {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        color: $cor-1;
         a {
-        text-decoration:underline
-       }
+            @include transition;
+            &:hover {
+                text-decoration: underline;
+                color: $cor-1;
+            }
+        }
     }
 }

@@ -1,6 +1,6 @@
 .inscrevase {
     @include gradient((-90deg, $cor-2 0%, $cor-bg-1 100%));
-    padding: 5rem;
+    padding: 5rem 0;
     .container {
         display:flex;
         align-items: center;

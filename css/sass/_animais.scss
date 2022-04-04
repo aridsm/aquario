@@ -1,6 +1,6 @@
 .animais {
     @include gradient((-90deg, $cor-3 0%, $cor-bg-2 100%));
-    padding: 5rem;
+    padding: 5rem 0;
     .container {
         display: flex;
         align-items: center;
@@ -40,10 +40,8 @@
             font-size: 0.875rem;
         }
         img {
-            height: 200px;
             display: block;
-            margin-top: -30%;
-            margin-bottom: 1rem;
+            margin-top: -40%;
             width: 100%;
         }
         p {
@@ -54,12 +52,15 @@
     }
     .btns-slide {
             color: $cor-1;
-            font-size: 3rem;
+            font-size: 2rem;
             margin-left: 3rem;
             button {
                 opacity: 0.3;
                 display: block;
+                border:1px solid $cor-1;
+                @include borderRadius(3px);
                 @include transition;
+                margin: 0.4rem;
                 &:hover {
                     opacity: 1;
                 }

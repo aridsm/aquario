@@ -9,8 +9,12 @@ body {
     @include gradient((-90deg, $cor-1 0%, #64B6B1 100%));
     @include borderRadius(30px);
     @include shadow(4px 4px 20px #0e4a6b80);
+    @include transition;
     padding: 8px 25px;
     color: $cor-5;
+    &:hover {
+        @include shadow(4px 4px 20px #0e4a6b80, 0 0 0 6px $cor-borda);
+    }
 }
 
 input {
@@ -49,5 +53,5 @@ h1,h2,h3 {
     max-width: 880px;
     width: 100%;
     margin: 0 auto;
-    padding:0 15px;
+    padding:0 30px;
 }
