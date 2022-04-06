@@ -21,9 +21,19 @@
             margin-top: 1rem;
             border-top: 2px solid $cor-fundos;
         }
+        li > p {
+            margin-top: 0.5rem;
+        }
         button {
             text-align:left;
             @include transition;
+            p, span {
+                display: inline-block;
+            }
+            span {
+                margin-left: 5px;
+                @include transition;
+            }
             i {
                 color: $cor-1;
             }
@@ -31,9 +41,18 @@
                 color: $cor-1;
                 text-decoration: underline;
             }
+            &.active{
+                color: $cor-1;
+                span {
+                    transform: rotate(-90deg);
+                }
+            }
         }
         p {
             display: none;
+            &.active {
+                display: block;
+            }
         }
     }
 }

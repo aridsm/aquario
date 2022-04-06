@@ -15,8 +15,8 @@
     <div class="sup-header">
         <div class="container-header">
             <div class="horarios-abertos">
-                <button class="fechado-aberto">Fechado agora <i class="bi bi-caret-left"></i></button>
-                <ul>
+                <button class="fechado-aberto"><p></p><span class="icon"><i class="bi bi-caret-left"></i></span></button>
+                <ul class="animeLeft">
                     <li>
                         <p>Segunda a sexta</p>
                         <span class="horario"><time>8:00</time> as <time>17:00</time></span>
@@ -35,7 +35,7 @@
         <div class="container-header">      
             <p class="logo">Aquário</p>
             <button aria-label="abrir menu" class="btn-menu-mobile"><i class="bi bi-list"></i></button>
-            <nav>
+            <nav class="animeLeft">
                 <ul>
                     <li><a href="">Home</a></li>
                     <li><a href="">Visita</a></li>
@@ -55,18 +55,18 @@
                     <p class="subtitulo">Id lobortis nulla vestibulum</p>
                     <h1>Lorem <span>ipsum</span> dolor sit amet</h1>
                     <p>Ut euismod lorem ac ultricies posuere. Nulla sed euismod felis. </p>
-                    <a href="" class="btn-geral">Compre o ingresso</a>  
+                    <a href="" class="btn-geral">Compre o ingresso</a>
+                    <ul class="redes-sociais">
+                        <li><a href=""><i class="bi bi-instagram"></i></a></li>
+                        <li><a href=""><i class="bi bi-twitter"></i></a></li>
+                        <li><a href=""><i class="bi bi-youtube"></i></a></li>
+                    </ul>
                 </div>
                 <div class="imgs-principal">
                     <div class="circulo-1">
                         <img src="./img/imgprincipal1.png" alt="">
                     </div>
                 </div>
-                <ul class="redes-sociais">
-                    <li><a href=""><i class="bi bi-instagram"></i></a></li>
-                    <li><a href=""><i class="bi bi-twitter"></i></a></li>
-                    <li><a href=""><i class="bi bi-youtube"></i></a></li>
-                </ul>
             </div>
         </section>
         <section class="eventos">
@@ -106,10 +106,35 @@
                     <a href="#" class="btn-geral">Todos os animais</a>
                 </header>
                 <div class="slide-animais">
-                    <article>
-                        <img src="./img/animais1.png" alt="peixe palhaço de lado">
+                    <article class="animeLeft">
+                        <img src="./img/animais1.png" alt="peixe-palhaço-comum">
                         <h3 aria-label="nome comum">Peixe-palhaço-comum</h3>
                         <i aria-label="nome científico" class="nome-cientifico">Amphiprion ocellaris</i>
+                        <p>Phasellus venenatis lectus a eros eleifend, sed feugiat magna rutrum. Integer dictum a ex id mollis. Nulla vestibulum, enim vitae ultrices luctus</p>
+                    </article>
+                    <article class="animeLeft">
+                        <img src="./img/animais2.png" alt="tartaruga-verde">
+                        <h3 aria-label="nome comum">Tartaruga-verde</h3>
+                        <i aria-label="nome científico" class="nome-cientifico">Chelonia mydas</i>
+                        <p>Phasellus venenatis lectus a eros eleifend, sed feugiat magna rutrum. Integer dictum a ex id mollis. Nulla vestibulum, enim vitae ultrices luctus</p>
+                    </article>
+                    <article class="animeLeft">
+                        <img src="./img/animais3.png" alt="raia-pintada">
+                        <h3 aria-label="nome comum">Raia-pintada</h3>
+                        <i aria-label="nome científico" class="nome-cientifico">Aetobatus narinari</i>
+                        <p>Phasellus venenatis lectus a eros eleifend, sed feugiat magna rutrum. Integer dictum a ex id mollis. Nulla vestibulum, enim vitae ultrices luctus</p>
+                    </article>
+                    <!-- add -->
+                    <article class="animeLeft">
+                        <img src="./img/animais4.png" alt="peixe-borboleta">
+                        <h3 aria-label="nome comum">Peixe-borboleta</h3>
+                        <i aria-label="nome científico" class="nome-cientifico">Chelmon rostratus</i>
+                        <p>Phasellus venenatis lectus a eros eleifend, sed feugiat magna rutrum. Integer dictum a ex id mollis. Nulla vestibulum, enim vitae ultrices luctus</p>
+                    </article>
+                    <article class="animeLeft">
+                        <img src="./img/animais5.png" alt="tubarão-azul">
+                        <h3 aria-label="nome comum">Tubarão-azul</h3>
+                        <i aria-label="nome científico" class="nome-cientifico">Prionace glauca</i>
                         <p>Phasellus venenatis lectus a eros eleifend, sed feugiat magna rutrum. Integer dictum a ex id mollis. Nulla vestibulum, enim vitae ultrices luctus</p>
                     </article>
                     <div class="btns-slide">
@@ -137,20 +162,20 @@
                 </header>
                 <ul>
                     <li>
-                        <button>Donec ullamcorper justo in diam? <i class="bi bi-caret-left"></i></button>
-                        <p>Etiam convallis, libero et condimentum scelerisque, mi tortor ultricies nisi, a maximus justo nisi a eros.</p>
+                        <button><p>Donec ullamcorper justo in diam?</p><span><i class="bi bi-caret-left"></i></span></button>
+                        <p class="animeLeft">Etiam convallis, libero et condimentum scelerisque, mi tortor ultricies nisi, a maximus justo nisi a eros.</p>
                     </li>
                     <li>
-                        <button>Nam pretium, ex quis dignissim faucibus? <i class="bi bi-caret-left"></i></button>
-                        <p>Nulla iaculis elit sapien, ut malesuada tortor lobortis eget. Vestibulum consequat, nibh ac pellentesque placerat.</p>
+                        <button><p>Nam pretium, ex quis dignissim faucibus?</p><span><i class="bi bi-caret-left"></i></span></button>
+                        <p class="animeLeft">Nulla iaculis elit sapien, ut malesuada tortor lobortis eget. Vestibulum consequat, nibh ac pellentesque placerat.</p>
                     </li>
                     <li>
-                        <button> Vestibulum at lacus eget metus? <i class="bi bi-caret-left"></i></button>
-                        <p>Donec efficitur consequat lectus, in faucibus dui. Etiam convallis, libero et condimentum scelerisque, mi tortor ultricies nisi, a maximus.</p>
+                        <button><p>Vestibulum at lacus eget metus?</p><span><i class="bi bi-caret-left"></i></span></button>
+                        <p class="animeLeft">Donec efficitur consequat lectus, in faucibus dui. Etiam convallis, libero et condimentum scelerisque, mi tortor ultricies nisi, a maximus.</p>
                     </li>
                     <li>
-                        <button>Aenean ut elit ligula? <i class="bi bi-caret-left"></i></button>
-                        <p>Pellentesque ullamcorper ut risus in tempus. Nullam porta cursus nisl quis suscipit. Sed sed condimentum enim, in suscipit urna.</p>
+                        <button><p>Aenean ut elit ligula?</p><span><i class="bi bi-caret-left"></i></span></button>
+                        <p class="animeLeft">Pellentesque ullamcorper ut risus in tempus. Nullam porta cursus nisl quis suscipit. Sed sed condimentum enim, in suscipit urna.</p>
                     </li>
                 </ul>
             </div>
@@ -225,5 +250,6 @@
             </div>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

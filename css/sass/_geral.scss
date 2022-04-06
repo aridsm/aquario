@@ -55,3 +55,16 @@ h1,h2,h3 {
     margin: 0 auto;
     padding:0 30px;
 }
+
+.animeLeft {
+    transform: translateX(-20px);
+    opacity: 0;
+    animation: animeLeft .3s forwards;
+}
+
+@keyframes animeLeft {
+    to {
+        opacity: initial;
+        transform: initial;
+    }
+}

@@ -1,3 +1,9 @@
+@media all and (min-width: 1850px) {
+    .principal {
+        min-height: initial;
+    }
+}
+
 @media all and (max-width: 1100px) {
     .principal h1 {
         font-size: 3rem;
@@ -32,14 +38,17 @@
         ul {
             flex-direction: column;
             justify-content: space-evenly;
-            min-height: calc(100vh - 2rem);
+            min-height: calc(100vh - 4rem);
             li {              
                 width: 100%;
                 text-align: center;
-            };
+            }
             a {
                 width: 100%;
             }
+        }
+        &.active {
+            display: block;
         }
     }
     .btn-menu-mobile {

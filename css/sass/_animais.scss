@@ -21,9 +21,11 @@
     align-items: flex-end;
     article {
         text-align: right;
+        display: none;
         h3 {
             @include fitContent;
             margin-left: auto;
+            font-size: 1.25rem;
             &::before {
                 content: '';
                 background: $cor-1;
@@ -48,6 +50,9 @@
             max-width: 270px;
             margin-left: auto;
             margin-top: 1.5rem;
+        }
+        &.active {
+            display: block;
         }
     }
     .btns-slide {
