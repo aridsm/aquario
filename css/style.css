@@ -315,4 +315,5 @@ footer .termos-by a:hover { text-decoration: underline; color: #96EBE6; }
   .eventos img { display: none; }
   .sup-header { height: 100%; }
   .sup-header .container-header { display: grid; grid-template-columns: auto auto; grid-row: 2rem 2rem; padding: 0; justify-content: space-between; background-color: #0F6393; }
-  .sup-header .container-header .doacao-link { grid-column: 1 / -1; grid-row: 1; width: 100%; text-align: center; } }
+  .sup-header .container-header .doacao-link { grid-column: 1 / -1; grid-row: 1; width: 100%; text-align: center; }
+  .galeria { display: none; } }
