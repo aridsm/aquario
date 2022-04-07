@@ -271,6 +271,8 @@ footer .termos-by a:hover { text-decoration: underline; color: #96EBE6; }
   .inf-header nav ul li { width: 100%; text-align: center; }
   .inf-header nav ul a { width: 100%; }
   .inf-header nav.active { display: block; }
+  .inf-header nav.active nav { top: 2rem; }
+  .inf-header nav.active nav ul { min-height: calc(100vh - 2rem); }
   .btn-menu-mobile { display: block; } }
 
 @media all and (max-width: 790px) { .principal .container-header { flex-direction: column; text-align: center; padding: 9rem 45px 5rem 45px; }
@@ -278,7 +280,7 @@ footer .termos-by a:hover { text-decoration: underline; color: #96EBE6; }
   .principal .container-header .imgs-principal { order: -1; margin-bottom: 7rem; }
   .principal .container-header .imgs-principal .circulo-1 { width: 10rem; height: 10rem; }
   .principal .container-header .imgs-principal .circulo-1::before { content: ''; width: 15rem; height: 15rem; }
-  .principal .container-header .imgs-principal .circulo-1 img { width: 350px; height: 350px; bottom: -110px; right: -120px; }
+  .principal .container-header .imgs-principal .circulo-1 img { width: 300px; height: 300px; bottom: -100px; right: -70px; }
   .eventos .container, .animais .container, .perguntas .container, .inscrevase .container { flex-direction: column; }
   .eventos .container header, .animais .container header, .perguntas .container header, .inscrevase .container header { text-align: center; margin-bottom: 3rem; }
   .animais .container .header-animais { order: -1; }

@@ -50,6 +50,12 @@
         }
         &.active {
             display: block;
+            nav {
+                top:2rem;
+                ul {
+                    min-height: calc(100vh - 2rem);
+                }
+            }
         }
     }
     .btn-menu-mobile {
@@ -78,10 +84,10 @@
                     height: 15rem;
                 }
                 img {
-                    width: 350px;
-                    height: 350px;
-                    bottom: -110px;
-                    right: -120px;
+                    width: 300px;
+                    height: 300px;
+                    bottom: -100px;
+                    right: -70px;
                 }
             }
         }
