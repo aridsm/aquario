@@ -16,6 +16,7 @@
     ul {
         order: -1;
         max-width: 350px;
+        width: 100%;
         li + li {
             padding-top: 1rem;
             margin-top: 1rem;
@@ -23,10 +24,19 @@
         }
         li > p {
             margin-top: 0.5rem;
+            display: none;
+            width: 100%;
+            &.active {
+                display: block;
+            }
         }
         button {
             text-align:left;
             @include transition;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             p, span {
                 display: inline-block;
             }
@@ -46,12 +56,6 @@
                 span {
                     transform: rotate(-90deg);
                 }
-            }
-        }
-        p {
-            display: none;
-            &.active {
-                display: block;
             }
         }
     }
