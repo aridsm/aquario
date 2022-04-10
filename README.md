@@ -1,4 +1,4 @@
-# aquario
+# Aquário 🐟🦈🐙
  
  Projeto de landing page de um aquário feito com Html, Sass e JavaScript. Conta com:
  - Seção de eventos
