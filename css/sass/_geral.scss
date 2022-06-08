@@ -9,19 +9,20 @@ body {
 .btn-geral {
     @include gradient((-90deg, $cor-1 0%, #64B6B1 100%));
     @include borderRadius(30px);
-    @include shadow(4px 4px 20px #0e4a6b80);
+    @include shadow(4px 4px 30px #0e4b6b5e);
     @include transition;
     padding: 8px 25px;
     color: $cor-5;
+
     &:hover {
-        @include shadow(4px 4px 20px #0e4a6b80, 0 0 0 6px $cor-borda);
+        @include shadow(4px 4px 30px #0e4b6b5e, 0 0 0 6px $cor-borda);
     }
 }
 
 input {
     padding: 0.5rem;
     @include borderRadius(3px);
-    border:1px solid $cor-borda;
+    border: 1px solid $cor-borda;
     background: $cor-fundos;
     font-size: inherit;
     font-family: inherit;
@@ -41,11 +42,13 @@ h2 {
     text-shadow: 4px 4px 4px $cor-bg-1;
 }
 
-h2 + .btn-geral {
+h2+.btn-geral {
     margin-top: 1.5rem;
 }
 
-h1,h2,h3 {
+h1,
+h2,
+h3 {
     line-height: 1;
 
 }
@@ -54,7 +57,7 @@ h1,h2,h3 {
     max-width: 880px;
     width: 100%;
     margin: 0 auto;
-    padding:0 25px;
+    padding: 0 25px;
 }
 
 .animeLeft {
